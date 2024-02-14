@@ -20,13 +20,19 @@ form {
   padding: 15px;
   border: 0.5px solid blue;
 }
-#submit-btn {
+#submit_btn {
   border-radius: 50px;
   color: whitesmoke;
   background-color: blue;
   padding: 15px;
   width: 85px;
   border: 0.5px solid whitesmoke;
+  transition: all 0.25s ease-in-out;
+}
+#submit_btn:hover {
+  background-color: white;
+  color: blue;
+  border: 0.5px solid blue;
 }
 
 .recipe {
