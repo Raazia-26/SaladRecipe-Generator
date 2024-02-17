@@ -6,21 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Salad Recipes</title>
   <link rel="stylesheet" href="src/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 
 </head>
 
 <body>
   <h1>Salad Recipe Generator</h1>
   <div class="main">
-    <form>
+    <form id="recipe-generator">
       <input type="text" id="input-text" placeholder="Enter any ingredient" autofocus required autocomplete="off">
-      <button id="submit_btn"> Submit</button>
+      <input type="submit" id="submit_btn">
+
+
 
     </form>
-    <p class="recipe_name">Chicken Caeser Salad</p>
-    <div class="recipe">
 
-      Chicken,</br> Lettuce, </br>Cucumber,</br> Croutons,</br> Dressing
+    <div class="recipe">
+      <div id="load"></div>
+
 
     </div>
 
