@@ -8,7 +8,11 @@ h1 {
   display: block;
   margin: 0 auto;
   text-align: center;
-  width: 700px;
+  width: 550px;
+}
+.wrapper {
+  display: block;
+  margin: 0 auto;
 }
 form {
   margin: 20px;
@@ -34,7 +38,12 @@ form {
   color: blue;
   border: 0.5px solid blue;
 }
-
+.hint {
+  text-align: left;
+  margin-left: 50px;
+  padding: 10px;
+  opacity: 0.6;
+}
 .recipe {
   margin: 5px;
   background-color: whitesmoke;
@@ -42,7 +51,19 @@ form {
   padding: 8px;
   border-radius: 7px;
 }
+.hidden {
+  display: none;
+}
 
+.loading {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  25% {
+    opacity: 0.5;
+  }
+}
 footer {
   margin-top: 50px;
   font-size: 10px;
