@@ -9,7 +9,7 @@ function ingredientName(response) {
 
   let apiKey = "dfd604f6396ftb7o693bf0062e2334aa";
   let context =
-    "Please provide short and easy recipe with maximum 4 ingredients. Make ingredients and separate each line with a </br>. Make 'ingredients' and 'instructions' <strong>. Sign the poem 'SheCodes AI' at the end of the instructions inside <strong> and purple font color ";
+    "Please provide short and easy recipe with maximum 4 ingredients. Make ingredients and separate each line with a </br>. Make 'Ingredients' and 'Instructions' <em>. Sign the poem 'SheCodes AI' inside <strong> ";
   let prompt = `please generate a 4 ingredient recipe for ${ingName.value} Salad`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
